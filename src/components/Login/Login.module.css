@@ -1,0 +1,31 @@
+.form {
+    background-color: papayawhip;
+    display: block;
+    font-family: Snell Roundhand, cursive;
+    position: relative;
+    padding: 24px;
+    margin-top: 14px;
+    margin-left: 14px;
+    margin-bottom: 14px;
+    width: 400px;
+    border: solid 1px #eeeeee;
+    border-radius: 24px;
+}
+
+.input {
+    line-height: 1.5em;
+    border-radius: 4px;
+    border: solid 1px #eeeeee;
+    padding: 4px 6px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.error {
+    color: red;
+    font-weight: 700;
+    font-size: 12px;
+    z-index: 100;
+    display: flex;
+}
