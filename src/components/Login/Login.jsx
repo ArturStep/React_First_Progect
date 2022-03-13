@@ -38,9 +38,7 @@ const Login = (props) => {
                                     type={'email'}
                                     name={'email'}
                                     className={s.input}
-                                    onChange={handleChange}
                                     onBlur={handleBlur}
-                                    value={values.email}
                                 />
                             </div>
                             {touched.email && errors.email
@@ -51,9 +49,7 @@ const Login = (props) => {
                                     type={'password'}
                                     name={'password'}
                                     className={s.input}
-                                    onChange={handleChange}
                                     onBlur={handleBlur}
-                                    value={values.password}
                                 />
                             </div>
                             {touched.password && errors.password
@@ -62,10 +58,8 @@ const Login = (props) => {
                                 <Field
                                     type={'checkbox'}
                                     name={'rememberMe'}
-                                    onChange={handleChange}
-                                    value={values.rememberMe}
                                 />
-                                <label>remember me</label>
+                                <label  htmlFor={'rememberMe'}>remember me</label>
                             </div>
                             <button
                                 disabled={dirty && !isValid}

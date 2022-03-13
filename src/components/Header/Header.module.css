@@ -1,6 +1,7 @@
 .header {
     grid-area: h;
     background-color: #506CF0;
+    font-family: Snell Roundhand, cursive;
 }
 
 .header img {
@@ -13,4 +14,12 @@
 
 .loginBlock a {
     color: white;
+}
+
+.logout {
+    float: right;
+    border: none;
+    border-radius: 45px;
+    background-color: darkgray;
+    font-family: Snell Roundhand, cursive;
 }
