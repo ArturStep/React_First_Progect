@@ -19,8 +19,8 @@ const Login = (props) => {
                 rememberMe: false
             }}
                     validateOnBlur
-                    onSubmit = {(values, {setSubmitting}) => {
-                props.login(values.email, values.password, values.rememberMe)
+                    onSubmit = {(values, {setFieldError}, setSubmit) => {
+                props.login(values.email, values.password, values.rememberMe, setFieldError)
             }}
                     validationSchema={validationsSchema}
             >
