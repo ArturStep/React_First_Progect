@@ -10,6 +10,7 @@ import UsersContainer from './components/Users/UsersContainer';
 import ProfileContainer from "./components/Profile/ProfileContainer";
 import HeaderContainer from "./components/Header/HeaderContainer";
 import LoginContainer from "./components/Login/LoginContainer";
+import ProfileUsers from "./components/Profile/ProfileUsers";
 
 const App = (props) => {
 
@@ -20,7 +21,7 @@ const App = (props) => {
             <div className='app-wrapper-content'>
                 <Routes>
                     <Route path='/profile/:userId'
-                           element={<ProfileContainer />}/>
+                           element={<ProfileUsers />}/>
                     <Route path='/profile'
                            element={<ProfileContainer />}/>
                     <Route path='/users/*'

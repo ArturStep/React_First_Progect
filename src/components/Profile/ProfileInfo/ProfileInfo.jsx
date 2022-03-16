@@ -2,6 +2,7 @@ import React from 'react';
 import s from './ProfileInfo.module.css';
 import Preloader from '../../common/Preloader/Preloader';
 import ProfileStatus from './ProfileStatus';
+import usersPhoto from "../../../asserts/img/user.png";
 
 const ProfileInfo = (props) => {
     if (!props.profile) {
@@ -15,7 +16,7 @@ const ProfileInfo = (props) => {
                     src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnKZOd3Bmj95fjujf17X6TvLYWPx8SgLPmPw&usqp=CAU'/>
             </div>*/}
             <div className={s.descriptionBlock}>
-                <img src={props.profile.photos.large}/>
+                <img src={props.profile.photos.large != null ? props.profile.photos.large : usersPhoto}/>
                 <ProfileStatus status={props.status} updateStatus={props.updateStatus}/>
                 <div>Контакты:</div>
                 <li>Facebook: {props.profile.contacts.facebook}</li>
